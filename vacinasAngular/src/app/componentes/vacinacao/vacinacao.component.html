@@ -1,0 +1,35 @@
+<mat-toolbar color="primary">
+  <span>Carteirinha de Vacinação</span>
+</mat-toolbar>
+<div class= "ola" align="center">
+  <input id="nome" #nome  type="text" placeholder="Search" aria-label="Search"><button class="btn btn-success oi" (click)="getAllByNome(nome.value)"> pesquisar</button>
+  <button class="btn btn-info oi" (click)="getAll()"> limpar</button>
+  </div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Usuários</th>
+      <th scope="col">Vacinas</th>
+      <th scope="col">Data Da Aplicação</th>
+      <th scope="col">Número De Doses</th>
+      <th scope="col">Próxima Data Da Dose</th>
+      <th scope="col">Voltar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor= "let v of vacinacaoes">
+      <th >{{v?.id}}</th>
+      <td>{{v?.usuario }}</td>
+      <td>{{v?.vacina }}</td>
+      <td>{{v?.dataAplic}}</td>
+      <td>{{v?.numDose}}</td>
+      <td>{{v?.proxDataDose}}</td>
+     <td> <a class="btn btn-secondary" routerLink="/formulario-vacinacao">Voltar </a> </td>
+    </tr>
+    <tr>
+  </tbody>
+</table>
+
+
+

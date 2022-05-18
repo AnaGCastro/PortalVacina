@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+  <span>Vacinas Tomadas</span>
+</mat-toolbar>
+
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Fabricante</th>
+        <th scope="col">Quantidade de Doses</th>
+        <th scope="col">Intervalo de Doses</th>
+        <th scope="col">Adicionar</th>
+        <th scope="col">Deletar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vacinaa of vacinas">
+
+        <td>{{vacinaa.id}}</td>
+        <td>{{vacinaa.nome}}</td>
+        <td>{{vacinaa.fabricante}}</td>
+        <td>{{vacinaa.qtdDeDoses}}</td>
+        <td>{{vacinaa.intervaloDoses}}</td>
+        <td><a routerLink="/formulario-vacinas"><button class="btn btn-success">Adicionar</button></a></td>
+        <td><button class="btn btn-danger">Deletar</button></td>
+      </tr>
+
+      <tr>
+    </tbody>
+  </table>
+

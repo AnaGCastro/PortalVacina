@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  <span>Vacina +</span>
+</mat-toolbar>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="/usuarios">Usuários</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/vacinas">Vacinas</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/vacinacao">Vacinação</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Formulário</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/formulario-usuarios">Usuários</a></li>
+      <li><a class="dropdown-item" href="/formulario-vacinas">Vacinas</a></li>
+      <li><a class="dropdown-item" href="/formulario-vacinacao">Vacinação</a></li>
+    </ul>
+</ul>
+
+<router-outlet></router-outlet>
